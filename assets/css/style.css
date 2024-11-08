@@ -16,7 +16,6 @@ body {
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
     color: var(--dark-color);
 }
 
@@ -38,15 +37,54 @@ body {
     padding: 0.5rem 0;
 }
 
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
 .nav-logo {
-    height: 40px;
-    margin-right: 10px;
+    width: 150px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-title {
+    font-size: 1.0em; /* Adjust size for the title */
+    font-weight: bold;
+    color: #ffffff; /* White color for the title */
+}
+
+.brand-tagline {
+    font-size: 0.7em; /* Slightly smaller for tagline */
+    color: #cccccc; /* Light gray color for the tagline */
+}
+
+.kaizen-content 
+    p {
+    text-align: justify;
+    color: #000;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+.about-content 
+    p {
+    text-align: justify;
 }
 
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/kantor.jpg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/uin.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -550,6 +588,29 @@ html, body {
 
 .kaizen-image:hover img {
     transform: scale(1.02);
+}
+
+.quote-box {
+    background-color: #fff;
+    border: 1px solid #ffffff; /* Border color */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    
+}
+
+.quote p {
+    font-size: 1.1em;
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.author {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: right;
 }
 
 /* Responsive adjustments */
